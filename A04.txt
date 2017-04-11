@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+struct Point {
+	double x, y, z;
+	Point() {}
+	Point(double _x, double _y, double _z) {
+		x = _x;
+		y = _y;
+		z = _z;
+	}
+};
+
+int main() {
+	Point a(1, 2, 3);
+	cout << &a << " " << &a.x << " " << &a.y << " " << &a.z;
+	return 0;
+}

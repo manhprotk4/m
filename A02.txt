@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+struct Point {
+	double x, y;
+};
+
+void address(Point a, Point& b) {
+	cout << &a << endl;
+	cout << &b;
+}
+
+int main() {
+	Point f;
+	cin >> f.x >> f.y;
+	cout << &f.x << endl;
+	address(f, f);
+	return 0;
+}

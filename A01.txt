@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+struct Point {
+	double x, y;
+};
+
+void print(Point p) {
+	cout << "(" << p.x << ", " << p.y << ")";
+}
+
+int main() {
+	Point f;
+	cin >> f.x >> f.y;
+	print(f);
+	return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+struct Point {
+	double x, y;
+	Point() {}
+	Point(double _x, double _y) {
+		x = _x;
+		y = _y;
+	}
+	print() {
+		cout << "(" << x << ", " << y << ")";
+	}
+};
+
+Point mid_point(const Point& a, const Point& b) {
+	Point p;
+	p.x = (a.x + b.x)/2;
+	p.y = (a.y + b.y)/2;
+	return p;
+}
+
+int main() {
+	Point a(1, 2), b(3, 4), p;
+	p = mid_point(a, b);
+	p.print();
+	return 0;
+}
